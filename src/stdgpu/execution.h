@@ -82,13 +82,13 @@ static_assert(is_execution_policy_v<remove_cvref_t<host_policy>>,
  * \ingroup execution
  * \brief The device execution policy
  */
-constexpr device_policy device;
+static const device_policy device;
 
 /**
  * \ingroup execution
  * \brief The host execution policy
  */
-constexpr host_policy host;
+static const host_policy host;
 
 } // namespace stdgpu::execution
 
