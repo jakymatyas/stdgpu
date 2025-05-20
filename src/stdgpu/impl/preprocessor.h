@@ -16,8 +16,8 @@
 #ifndef STDGPU_PREPROCESSOR_H
 #define STDGPU_PREPROCESSOR_H
 
-namespace stdgpu::detail
-{
+namespace stdgpu{
+    namespace detail{
 
 #define STDGPU_DETAIL_CAT2_DIRECT(A, B) A##B
 #define STDGPU_DETAIL_CAT2(A, B) STDGPU_DETAIL_CAT2_DIRECT(A, B)
@@ -25,5 +25,6 @@ namespace stdgpu::detail
 #define STDGPU_DETAIL_CAT3(A, B, C) STDGPU_DETAIL_CAT2(A, STDGPU_DETAIL_CAT2(B, C))
 
 } // namespace stdgpu::detail
+}
 
 #endif // STDGPU_PREPROCESSOR_H

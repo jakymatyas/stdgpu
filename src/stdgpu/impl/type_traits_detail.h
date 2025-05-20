@@ -21,8 +21,8 @@
 
 #include <stdgpu/impl/preprocessor.h>
 
-namespace stdgpu::detail
-{
+namespace stdgpu{
+namespace detail{
 
 /**
  * \brief Macro to conditionally enable overloads
@@ -80,5 +80,6 @@ template <typename T>
 inline constexpr bool dependent_false_v = dependent_false<T>::value;
 
 } // namespace stdgpu::detail
+}
 
 #endif // STDGPU_TYPE_TRAITS_DETAIL_H

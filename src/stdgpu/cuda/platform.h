@@ -18,8 +18,9 @@
 
 #include <stdgpu/compiler.h>
 
-namespace stdgpu::cuda
-{
+namespace stdgpu{
+namespace cuda{
+
 
 /**
  * \def STDGPU_CUDA_HOST_DEVICE
@@ -72,5 +73,6 @@ namespace stdgpu::cuda
 #endif
 
 } // namespace stdgpu::cuda
+}
 
 #endif // STDGPU_CUDA_PLATFORM_H

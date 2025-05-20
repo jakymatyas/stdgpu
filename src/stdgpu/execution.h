@@ -50,8 +50,8 @@ inline constexpr bool is_execution_policy_v = is_execution_policy<T>::value;
 
 } // namespace stdgpu
 
-namespace stdgpu::execution
-{
+namespace stdgpu{
+namespace execution{
 
 /**
  * \ingroup execution
@@ -91,5 +91,6 @@ static const device_policy device;
 static const host_policy host;
 
 } // namespace stdgpu::execution
+}
 
 #endif // STDGPU_EXECUTION_H
